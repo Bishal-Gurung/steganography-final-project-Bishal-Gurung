@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <TextView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/usrnam"
+        android:textSize="20dp"
+        android:text="Welcome"
+        android:layout_marginLeft="15dp"
+        android:textColor="#1A9BF0"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/encode_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="247dp"
+        android:text="Encode" />
+
+    <Button
+        android:id="@+id/decode_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encode_button"
+        android:layout_alignEnd="@+id/encode_button"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="-3dp"
+        android:text="Decode" />
+
+
+    <!--    <android.support.v7.widget.RecyclerView-->
+
+<!--        android:id="@+id/notes_list"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/usrnam"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_marginTop="-5dp"-->
+<!--        >-->
+
+<!--    </android.support.v7.widget.RecyclerView>-->
+
+</RelativeLayout>
